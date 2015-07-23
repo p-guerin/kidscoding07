@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
 @font-face {
   font-family: 'Bariol';
   src: url('../fonts/Bariol_Regular.eot');
@@ -30,6 +32,40 @@ body {
   color: rgba(0, 0, 0, 0.87);
 }
 
+/* Navigation Supérieure */
+.kc-topnav {
+  display: block;
+  position: fixed;
+  float: left;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #000;
+  z-index: 9999;
+}
+.kc-topnav img {
+  float: left;
+  height: 100%;
+}
+.kc-left_topnav, .kc-center_topnav, .kc-ul_topnav {
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.kc-left_topnav{ width: 10%;}
+.kc-center_topnav{ width: 60%;}
+.kc-ul_topnav{ width: 30%;}
+
+.kc-center_topnav img {
+  margin-left: 66.6667%;
+}
+
+.kc-li_topnav {
+  display: block;
+  float: left;
+  height: 100%;
+}
 .kc-header {
   display: block;
   position: relative;
@@ -42,5 +78,18 @@ body {
   display: block;
   position: absolute;
   top: 5%;
-  left: 5%;
+  right: 5%;
+  width: 33%;
+}
+.kc-logo img {
+  width: 100%;
+}
+.kc-accroche {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+.kc-accroche h1 {
+  font-size: 2em;
 }
