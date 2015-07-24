@@ -13,12 +13,13 @@
 
     <link rel="stylesheet" href="css/style.css"/>
 
+    <script src="js/jquery-1.11.3.min.js"></script>
   </head>
   
   <body>
     <div class="kc-topnav">
       <div class="kc-left_topnav">
-        <img src="images/icone-hamburg.svg" alt="Icone Menu"><p>Menu</p>
+        <img src="images/icone-hamburg-topbar.svg" class="kc-openmenu" alt="Icone Menu">
       </div>
       <div class="kc-center_topnav">
         <a href="/"><img src="images/logo-kc07.svg" alt="Logo Kids Coding"></a>
@@ -34,6 +35,9 @@
     </div>
 
     <div class="kc-menu">
+      <div class="kc-right_menu">
+        <img src="images/icone-hamburg-topbar.svg" class="kc-closemenu" alt="Icone Menu">
+      </div>
       <ul class="kc-ul_menu">
         <li class="kc-li_menu">
           <a href="/">Accueil</a>
@@ -50,7 +54,7 @@
     <div class="kc-header">
       <div class="kc-filtre">
         <div class="kc-hamburger">
-          <img src="images/icone-hamburg.svg" alt="Icone Menu">
+          <img src="images/icone-hamburg.svg" class="kc-openmenu" alt="Icone Menu">
         </div>
         <div class="kc-logo">
           <img src="images/logo-kc07.svg" alt="Logo Kids Coding">
@@ -167,5 +171,7 @@
         <textarea name="infos" id="" cols="30" rows="10"></textarea>
       </form>
     </div>
+
+    <script src="js/hamburger.js"></script>
   </body>
 </html>
