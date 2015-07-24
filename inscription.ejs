@@ -1,43 +1,83 @@
+<!DOCTYPE html>
+  <html>
+<head>
   <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta http-equiv="content-language" content="fr">
       <meta name="language" content="fr">
-<div class="formulaire">
-Formulaire d'inscription :
-<p>L'enfant : </p>
-<form action="/" method="post">
-	<p>Nom <input type="text" /></p>
-	<p>Prénom <input type="text" /></p>
-	<p>Age (ans)
-		 8<input type="radio" name="age"/>
-		 9<input type="radio" name="age" />
-		10<input type="radio" name="age"/ >
-		11<input type="radio" name="age"/>
-		12<input type="radio" name="age"/>
-	</p>
-	<p>Choisissez vos dates :</br>
-		Aout :
-				26<input type="checkbox" name="date" value="26-08" /></br>
-		Septembre : 
-				2<input type="checkbox" name="date" value="02-09"/>
-				9<input type="checkbox" name="date" value="09-09"/>
-				16<input type="checkbox" name="date" value="16-09"/>
-				23<input type="checkbox" name="date" value="23-09"/>
-				30<input type="checkbox" name="date" value="30-09"/></br>
-		Octobre :
-				 7<input type="checkbox" name="date" value="07-10"/>
-				14<input type="checkbox" name="date" value="14-10"/>
-				21<input type="checkbox" name="date" value="21-10"/>
-				28<input type="checkbox" name="date" value="28-10"/>
-	</p>
-<p>Le représentant légal :</p>	
-	<p>Nom <input type="text" /></p>
-	<p>Prénom <input type="text" name="Prénom" /></p>
-	<p>Mail <input type="email" name="Mail" /></p>
-	<p>Téléphone <input type="tel" maxlength="10"minlength="10" name="Téléphone" /></p>
-	<p>J'autorise le Kidscoding07 à prendre et à publier des photos de mon enfant : Oui :<input type="radio" name="photo" value="Oui" checked />Non : <input type="radio" name="photo" value="Non" /></p>
-	<input type="submit" name="Envoyer" />
-</form>
-</div>
+      <link rel="stylesheet" type="text/css" href="css/formulaire.css">
+  	<title></title>
+</head>
+<body>  
+	<div class="formulaire">
+		<h2>Formulaire d'inscription :</h2>
+	<div class="renseignement">
+		<h4>L'enfant : </h4>
+		<form action="/" method="post">
+			<label>Nom</label>
+			<input type="text" />
+			<label>Prénom</label>
+			<input type="text" />
+			<label>Age (ans)</label>
+			<label>8</label>
+			<input type="radio" name="age"/>
+			<label>9</label>
+			<input type="radio" name="age"/>
+			<label>10</label>
+			<input type="radio" name="age"/>
+			<label>11</label>
+			<input type="radio" name="age"/>
+			<label>12</label>
+			<input type="radio" name="age"/>
+	</div>
+		<div class="renseignement">
+			<h4>Le représentant légal :</h4>	
+			<label>Nom </label>
+			<input type="text" />
+			<label>Prénom</label>
+			<input type="text" name="Prénom" />
+			<label>Mail</label>
+			<input type="email" name="Mail" />
+			<label>Téléphone </label>
+			<input type="tel" maxlength="10"minlength="10" name="Téléphone" />
+		</div>	
+			<div class="date">
+				<h4>Choisissez vos mercredis :</h4>
+				<div>
+					<p>Aout :</p>
+						<label>26</label>
+						<input type="checkbox" name="date" value="26-08" />
+					<p>Septembre :</p>
+						<label>2</label>
+						<input type="checkbox" name="date" value="02-09"/>
+						<label>9</label>
+						<input type="checkbox" name="date" value="09-09"/>
+						<label>16</label>
+						<input type="checkbox" name="date" value="16-09"/>
+						<label>23</label>
+						<input type="checkbox" name="date" value="23-09"/>
+						<label>30</label>
+						<input type="checkbox" name="date" value="30-09"/></br>
+					<p>Octobre : </p>
+						<label>7</label>
+						<input type="checkbox" name="date" value="07-10"/>
+						<label>14</label>
+						<input type="checkbox" name="date" value="14-10"/>
+						<label>21</label>
+						<input type="checkbox" name="date" value="21-10"/>
+						<label>28</label>
+						<input type="checkbox" name="date" value="28-10"/>
+				</div>		
+				</p>
+			</div>
+			<div class="photo">
+				<h4>Photographie : </h4>	
+				<p>J'autorise le Kidscoding07 à prendre et à publier des photos de mon enfant : Oui :<input type="radio" name="photo" value="Oui" checked />Non : <input type="radio" name="photo" value="Non" /></p>
+			</div>
+			<input type="submit" name="Envoyer" class="bouton" />
+		</form>
+	</div>
+</body>
+</html>  
